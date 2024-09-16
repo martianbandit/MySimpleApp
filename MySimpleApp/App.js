@@ -15,7 +15,7 @@ export default function App() {
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
       <Image 
         style={styles.image}
-        source={{ uri: 'https://via.placeholder.com/150' }} 
+        source={{ uri: 'https:/https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=drive_link/via.placeholder.com/150' }} 
       />
       <TextInput
         style={styles.input}
