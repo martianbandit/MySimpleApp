@@ -15,7 +15,7 @@ export default function App() {
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
       <Image 
         style={styles.image}
-        source={{ uri: 'https:/https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=drive_link/via.placeholder.com/150' }} 
+        source={{ uri: 'https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=drive_link' }} 
       />
       <TextInput
         style={styles.input}
@@ -32,7 +32,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'top',
+    justifyContent: 'center',
     padding: 16,
   },
   title: {
@@ -45,7 +45,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 8,
     marginBottom: 16,
-    borderRadius: 10,
+    borderRadius: 4,
+  },
+  image: {
+    width: 150,
+    height: 150,
+    marginBottom: 16,
+    alignSelf: 'center',
   },
   output: {
     fontSize: 18,
