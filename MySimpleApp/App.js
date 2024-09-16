@@ -15,7 +15,7 @@ export default function App() {
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
       <Image 
         style={styles.image}
-        source={{ uri: 'https://dhttps://www.http://www.serrescleroux.com/notion.so/integr-ia/Image-de-l-application-102ab155727680888738dc3865c59eda?pvs=4#102ab155727680169ec4de1e15d663e5rive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=drive_link' }} 
+        source={{ uri: './assets/local_image.png' }} 
       />
       <TextInput
         style={styles.input}
