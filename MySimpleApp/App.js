@@ -60,6 +60,12 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     alignSelf: 'center',
   },
+  Image2: {
+    width: 150,
+    height: 150,
+    marginBottom: 16,
+    alignSelf: 'center',
+  },
   output: {
     fontSize: 18,
     marginTop: 16,
