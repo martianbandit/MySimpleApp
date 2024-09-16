@@ -14,10 +14,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
-      <Image 
+
+     
+      <Image
         style={styles.image}
-        source={{ uri: '/workspaces/MySimpleApp/MySimpleApp/assets/favicon.png' }} 
-      />
+        source={LocalImage}
+      /> 
       <TextInput
         style={styles.input}
         placeholder="Saisir du texte"
