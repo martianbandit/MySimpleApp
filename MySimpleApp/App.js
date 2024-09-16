@@ -27,7 +27,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'top',
     padding: 16,
   },
   title: {
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 8,
     marginBottom: 16,
-    borderRadius: 4,
+    borderRadius: 10,
   },
   output: {
     fontSize: 18,
