@@ -16,7 +16,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
 
-      <ImageBackgroundComponent
+      <Image2
         styles={styles.Image}
         source={LocalImage2}
       />
