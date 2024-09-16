@@ -19,6 +19,7 @@ export default function App() {
       <ImageBackgroundComponent
         styles={styles.ImageBackgroundComponent}
         source={LocalImage2}
+      />
       <Image
         style={styles.image}
         source={LocalImage}
