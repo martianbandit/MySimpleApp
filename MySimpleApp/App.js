@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, View, TextInput, Button, StyleSheet, Alert, Image } from 'react-native';
+import LocalImage from './assets/favicon.png';
 
 export default function App() {
   const [text, setText] = useState('');
@@ -15,7 +16,7 @@ export default function App() {
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
       <Image 
         style={styles.image}
-        source={{ uri: './assets/local_image.png' }} 
+        source={{ uri: '/workspaces/MySimpleApp/MySimpleApp/assets/favicon.png' }} 
       />
       <TextInput
         style={styles.input}
