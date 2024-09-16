@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, TextInput, Button, StyleSheet } from 'react-native';
+import { Text, View, TextInput, Button, StyleSheet, Alert, Image } from 'react-native';
 
 export default function App() {
   const [text, setText] = useState('');
@@ -7,11 +7,16 @@ export default function App() {
 
   const handlePress = () => {
     setSubmittedText(text);
+    Alert.alert('Texte soumis', text);
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
+      <Image 
+        style={styles.image}
+        source={{ uri: 'https://via.placeholder.com/150' }} 
+      />
       <TextInput
         style={styles.input}
         placeholder="Saisir du texte"
