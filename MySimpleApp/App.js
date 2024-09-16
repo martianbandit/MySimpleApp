@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+import { Text, View, TextInput, Button, StyleSheet } from 'react-native';
+
+export default function App() {
+  const [text, setText] = useState('');
+  const [submittedText, setSubmittedText] = useState('');
+
+  const handlePress = () => {
+    setSubmittedText(text);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Bienvenue dans MySimpleApp</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Saisir du texte"
+        value={text}
+        onChangeText={setText}
+      />
+      <Button title="Soumettre" onPress={handlePress} />
+      <Text style={styles.output}>Texte soumis : {submittedText}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 16,
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  input: {
+    borderColor: '#ccc',
+    borderWidth: 1,
+    padding: 8,
+    marginBottom: 16,
+    borderRadius: 4,
+  },
+  output: {
+    fontSize: 18,
+    marginTop: 16,
+    textAlign: 'center',
+  },
+});
